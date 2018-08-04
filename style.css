@@ -6,6 +6,7 @@
 
 body {
   background-color: #e2ffec;
+  font-family: ubuntu, arial;
 }
 
 #page-wrapper {
@@ -20,7 +21,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #6df4ff;
+  background-color: #e2ffec;
 }
 
 .logo {
@@ -28,12 +29,12 @@ header {
 }
 
 #header-img {
-  width: 100%;
-  height: 100%;
-  max-width: 200px;
+  width: 20%;
+  height: 20%;
+  min-width: 20%;
   display: flex;
   justify-content: center;
-  margin-left: 15px;
+  
 }
 
 ul {
@@ -45,6 +46,11 @@ ul {
 
 li {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
 }
 
 .nav-link {
@@ -69,7 +75,7 @@ li {
   justify-content: center;
   text-align: center;
   height: 200px;
-  margin-top: 340px;
+  margin-top: 260px;
 }
 
 #hero h2 {
@@ -88,7 +94,7 @@ li {
 }
 
 .hero-img {
-  width: auto;
+  width: 100%;
   padding: auto;
   margin: 0 auto;
 }
@@ -98,11 +104,118 @@ figcaption {
   margin-right: 1px;
 }
 
-#hero h3 {
+/*Products*/
+#products {
+  margin-top: 190px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: column;
+  width: 640px;
+  height: 330px;
+}
+
+.img-box {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 2% 0 0 2%;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.men {
+  margin: 15px auto;
+  color: #000;
+  background-size: cover !important;
+  background-position: center !important;
+  background: url("https://images.pexels.com/photos/683381/pexels-photo-683381.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+}
+
+.women{
+  margin: 15px auto;
+  color: #000;
+  background-size: cover !important;
+  background-position: center !important;
+  background: url('https://images.pexels.com/photos/428338/pexels-photo-428338.jpeg?auto=compress&cs=tinysrgb&h=650&w=940')
+}
+
+.kid {
+  margin: 15px auto;
+  color: #fff;
+  background-size: cover !important;
+  background-position: center !important;
+  background: url("https://images.pexels.com/photos/206443/pexels-photo-206443.jpeg?auto=compress&cs=tinysrgb&h=650&w=940")
+}
+
+/*Features*/
+#features {
+  margin-top: 40px;
+}
+
+.persuasive-text {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: Chango;
+  font-size: 1.8em;
+  font-weight: 200;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  margin-left: 120px;
+  border: ;
+  color: red;
+}
+
+.blue {
+  color: blue;
+}
+
+.gold {
+  color: gold;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 53%;
+  padding: 5px;
+}
+
+/*Sign Up*/
+
+.sign-up{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  heiht: 200px;
   margin-top: 15px;
 }
 
-#hero p {
+.sign-up h3 {
+  margin-top: 15px;
+}
+
+.sign-up p {
   margin-top: 5px;
   margin-bottom: 10px;
 }
@@ -132,6 +245,41 @@ figcaption {
   color: #000;
 }
 
+/*Embedded video*/
+#you-matter {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+iframe {
+  max-width: 560px;
+  width: 100%;
+}
+
+/*Footer*/
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #03591a;
+  color: #fff;
+}
+
+footer ul {
+  width: 500px;
+}
+
+footer a {
+  color: white;
+  font-size: 15px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+span
+
 @media (max-width: 600px) {
   header {
     flex-wrap: wrap;
@@ -139,16 +287,22 @@ figcaption {
 }
 
 @media (max-width: 650px) {  
+  header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;    
+}
+  
   .logo {
     margin-top: 15px;
-    margin-bottom: 0;
-    width: 70%;
+    min-width:;
     position: relative;
 }
   
   #header-img {
-    width: 50%;
     margin: 0 auto;
+    min-width: 50%;
+    height: 100%;
   }
   
   nav {
@@ -167,17 +321,91 @@ figcaption {
   
   li {
     margin: 3px;
+    padding-bottom: 5px;
   }
   
-  #sign-up {
-    margin-top: 150px;
+  #hero {
+    margin-top: 300px;
   }
   
-  #sign-up p {
-    width: 300px;
+  #hero h2{
+    word-wrap: break-word;
+    font-size: 28px;
+  }
+  
+  figure {
+    width: 90%;
+    margin: auto;
+  }
+  
+  .img-box {
+    width: 90%;
+  }
+  
+  .persuasive-text {
+    font-size: 20px;
+    margin-top: -25px;
+  }
+  
+  /*Row will be column at this point.*/
+  .row {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: auto;
+  }
+  
+  .icon {
+    margin: auto;
+  }
+  
+  .desc {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    height: 120px;
+  }
+  
+  .sign-up {
+    margin-top: -15px;
   }
   
   #email {
-    min-width: 30px;
+    width: 350px;
+  }  
+}
+
+/*My vivo smartphone*/
+@media (max-width: 500px) {
+  #hero {
+    margin-top: 220px;
+  }
+  
+  #products {
+    margin-top: 90px;
+  }
+  
+  .img-box {
+    width: 50%;
+  }
+  
+  .img-box h2 {
+    font-size: 1em;
+  }
+  
+  .persuasive-text {
+    width: 80%;
+    margin: 0 auto 20px auto;
+  }
+  
+  .sign-up {
+    margin-top: 5px;
+    width: 60%;
+    margin: auto;
+  }
+  
+  #email {
+    width: 90%;
   }
 }
+  

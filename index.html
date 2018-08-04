@@ -1,9 +1,10 @@
 <!--Google Fonts-->
 
-<link href="https://fonts.googleapis.com/css?family=Paytone+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Chango|Paytone+One" rel="stylesheet">
 
-<!--FCC Test Suite-->
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<!--Font Awesome-->
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
 <div id="page-wrapper">
   
@@ -15,9 +16,9 @@
     
     <nav id="nav-bar">
       <ul>
+        <li><a class="nav-link" href="#products">Products</a></li>
         <li><a class="nav-link" href="#features">Features</a></li>
-        <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
-        <li><a class="nav-link" href="#features">Pricing</a></li>
+        <li><a class="nav-link" href="#you-matter">Help end poverty</a></li>
       </ul>
     </nav>
   </header>
@@ -32,12 +33,100 @@
           <figcaption>Stock photo courtesy of <a href="https://www.pexels.com/@spencer-selover-142259" target="_blank">Spencer Selover</a></figcaption>
         </figure>
       </div>
+    </section>
+  </div>
+  
+  <!--Products-->
+  <div class="container">
+    <section id="products">
+      
+      <!--I link the image to the respective owner of the stockphoto.-->
+      <a href="https://www.pexels.com/photo/black-haired-man-in-white-crew-neck-t-shirt-683381/" target="_blank">
+        <div class="img-container">
+          <div class="img-box men">
+            <h2>MEN'S</h2>
+          </div>
+        </div>
+      </a>
+      
+      <a href="https://www.pexels.com/photo/adolescent-casual-cute-elegant-428338/" target="_blank">
+        <div class="img-container">
+          <div class="img-box women">
+            <h2>WOMEN'S</h2>
+          </div>
+        </div>
+      </a>
+      
+      <a href="https://www.pexels.com/photo/children-riding-bicycle-206443/" target="_blank"> 
+        <div class="img-container">
+          <div class="img-box kid">
+            <h2>KID'S</h2>
+          </div>
+        </div>
+      </a>
+      
+    </section>
+  </div>
+     
+  <!--Features-->
+   <div class="container">
+    <section id="features">
+      <h2 class="persuasive-text">Why you should buy from us</h2>
+      <div class="row">
+        <div class="icon">
+          <i class="fab fa-3x fa-gripfire"></i>
+        </div>
+        <div class="desc">
+          <h2>Impeccable Quality</h2>
+          <p>Finest fabric from all around the world. Carefully sourced raw-materials. Immaculate finish. And vegan-friendly. Guaranteed.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="icon blue">
+          <i class="far fa-2x fa-paper-plane"></i>
+        </div>
+        <div class="desc">
+          <h2>Free shipping worldwide</h2>
+          <p>No matter where you are, your shirt will always find you. We also will provide tracking service for you to check the whereabout of your purchase.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="icon gold">
+          <i class="fas fa-2x fa-donate"></i>
+        </div>
+        <div class="desc">
+          <h2>Comfort for a cause</h2>
+          <p>RM2 per every item sold donated to charity. Join our force to eradicate poverty and provide clean water to children in Africa.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!--Sign-Up section-->
+  <div class="container">
+    <div class="sign-up">
       <h3>JOIN OUR NEWSLETTER</h3>
       <p>Register your email for news and special offers</p>
       <form id="form" action="https://www.freecodecamp.com/email-submit">
         <input name="email" id="email" type="email" placeholder="Enter your email address" required>
         <input id="submit" type="submit" value="Join">
       </form>
+    </div>
+  </div>
+  
+  <!--Require an embeded product video to pass the test. So I use this TED Talk about fighting against poverty.-->
+  <div class="container">
+    <section id="you-matter">
+      <iframe id="video" height="315" src="https://www.ted.com/talks/andrew_youn_3_reasons_why_we_can_win_the_fight_against_poverty" frameborder="0" allowfullscreen></iframe>
     </section>
   </div>
+  
+  <footer>
+    <span>&copy 2018, Generic Tee.</span>
+    <ul>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Use</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Return and Refund Policy</a></li>
+    </ul>
+  </footer>
 </div>
